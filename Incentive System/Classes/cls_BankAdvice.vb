@@ -10,7 +10,6 @@
             Dim dscmd As SqlClient.SqlDataAdapter = New SqlClient.SqlDataAdapter(query, con.ConString)
             dscmd.Fill(DS, "tbl_BankAdvice")
 
-
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Finally

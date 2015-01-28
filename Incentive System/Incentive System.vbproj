@@ -1,0 +1,533 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FA846C2A-DD97-46F5-8CD4-FA2B0FD0BBF3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Incentive_System.My.MyApplication</StartupObject>
+    <RootNamespace>Incentive_System</RootNamespace>
+    <AssemblyName>Incentive System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <ApplicationIcon>Incentive Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Incentive System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Incentive System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>Incentive System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>Incentive System.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\cls_Accounts.vb" />
+    <Compile Include="Classes\cls_Advances.vb" />
+    <Compile Include="Classes\cls_BankAdvice.vb" />
+    <Compile Include="Classes\cls_Clients.vb" />
+    <Compile Include="Classes\cls_Connection.vb" />
+    <Compile Include="Classes\cls_Details.vb" />
+    <Compile Include="Classes\cls_Disbursement.vb" />
+    <Compile Include="Classes\cls_Employee.vb" />
+    <Compile Include="Classes\cls_Liquidate.vb" />
+    <Compile Include="Classes\cls_Reports.vb" />
+    <Compile Include="Classes\cls_SalesInvoice.vb" />
+    <Compile Include="Classes\cls_SystemParameters.vb" />
+    <Compile Include="Forms\frm_ARSchedule.Designer.vb">
+      <DependentUpon>frm_ARSchedule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_ARSchedule.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_ARScheduleAging.Designer.vb">
+      <DependentUpon>frm_ARScheduleAging.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_ARScheduleAging.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_ARScheduleMenu.Designer.vb">
+      <DependentUpon>frm_ARScheduleMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_ARScheduleMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_ARSchedulePerDateRange.Designer.vb">
+      <DependentUpon>frm_ARSchedulePerDateRange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_ARSchedulePerDateRange.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_ARTrackingReportPerClient.Designer.vb">
+      <DependentUpon>frm_ARTrackingReportPerClient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_ARTrackingReportPerClient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_BankAdvice.Designer.vb">
+      <DependentUpon>frm_BankAdvice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_BankAdvice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Client.Designer.vb">
+      <DependentUpon>frm_Client.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Client.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_CollectionORTrackingReport.Designer.vb">
+      <DependentUpon>frm_CollectionORTrackingReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_CollectionORTrackingReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_CollectionReportMenu.Designer.vb">
+      <DependentUpon>frm_CollectionReportMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_CollectionReportMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_CrystalReportViewer.Designer.vb">
+      <DependentUpon>frm_CrystalReportViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_CrystalReportViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Liquidate_RemainingBalanceStatus.Designer.vb">
+      <DependentUpon>frm_Liquidate_RemainingBalanceStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Liquidate_RemainingBalanceStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_LiquidationReport_ReleaseDate.Designer.vb">
+      <DependentUpon>frm_LiquidationReport_ReleaseDate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_LiquidationReport_ReleaseDate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_NewSalesInvoices.Designer.vb">
+      <DependentUpon>frm_NewSalesInvoices.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_NewSalesInvoices.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Advances.Designer.vb">
+      <DependentUpon>frm_Advances.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Advances.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Advances_Insert.Designer.vb">
+      <DependentUpon>frm_Advances_Insert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Advances_Insert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Disbursement.Designer.vb">
+      <DependentUpon>frm_Disbursement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Disbursement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_EmployeeAdd.Designer.vb">
+      <DependentUpon>frm_EmployeeAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_EmployeeAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_EmployeeEdit.Designer.vb">
+      <DependentUpon>frm_EmployeeEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_EmployeeEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_EmployeeSearch.Designer.vb">
+      <DependentUpon>frm_EmployeeSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_EmployeeSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Liquidate.Designer.vb">
+      <DependentUpon>frm_Liquidate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Liquidate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_LiquidationReport.Designer.vb">
+      <DependentUpon>frm_LiquidationReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_LiquidationReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Login.Designer.vb">
+      <DependentUpon>frm_Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_MainMenu.Designer.vb">
+      <DependentUpon>frm_MainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_MainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_ReportViewer.Designer.vb">
+      <DependentUpon>frm_ReportViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_ReportViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_RptCollectionReport.Designer.vb">
+      <DependentUpon>frm_RptCollectionReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_RptCollectionReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_SalesInvoices.Designer.vb">
+      <DependentUpon>frm_SalesInvoices.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_SalesInvoices.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_SalesInvoicesMarkingAsCancelled.Designer.vb">
+      <DependentUpon>frm_SalesInvoicesMarkingAsCancelled.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_SalesInvoicesMarkingAsCancelled.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_SalesInvoicesMarkingAsCollected.Designer.vb">
+      <DependentUpon>frm_SalesInvoicesMarkingAsCollected.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_SalesInvoicesMarkingAsCollected.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_SalesInvoicesMarkingAsReceived.Designer.vb">
+      <DependentUpon>frm_SalesInvoicesMarkingAsReceived.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_SalesInvoicesMarkingAsReceived.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_UpdateClient.Designer.vb">
+      <DependentUpon>frm_UpdateClient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_UpdateClient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_UpdateSalesInvoices.Designer.vb">
+      <DependentUpon>frm_UpdateSalesInvoices.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_UpdateSalesInvoices.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\mod_Login.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reports\rptCollectionReportNew.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptCollectionReportNew.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptCollectionReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptCollectionReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rpt_BankAdvice_BankAccount1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_BankAdvice_BankAccount.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rpt_BankAdvice_Paycard1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_BankAdvice_Paycard.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\frm_ARSchedule.resx">
+      <DependentUpon>frm_ARSchedule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_ARScheduleAging.resx">
+      <DependentUpon>frm_ARScheduleAging.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_ARScheduleMenu.resx">
+      <DependentUpon>frm_ARScheduleMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_ARSchedulePerDateRange.resx">
+      <DependentUpon>frm_ARSchedulePerDateRange.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_ARTrackingReportPerClient.resx">
+      <DependentUpon>frm_ARTrackingReportPerClient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_BankAdvice.resx">
+      <DependentUpon>frm_BankAdvice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Client.resx">
+      <DependentUpon>frm_Client.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_CollectionORTrackingReport.resx">
+      <DependentUpon>frm_CollectionORTrackingReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_CollectionReportMenu.resx">
+      <DependentUpon>frm_CollectionReportMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_CrystalReportViewer.resx">
+      <DependentUpon>frm_CrystalReportViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Liquidate_RemainingBalanceStatus.resx">
+      <DependentUpon>frm_Liquidate_RemainingBalanceStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_LiquidationReport_ReleaseDate.resx">
+      <DependentUpon>frm_LiquidationReport_ReleaseDate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_NewSalesInvoices.resx">
+      <DependentUpon>frm_NewSalesInvoices.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Advances.resx">
+      <DependentUpon>frm_Advances.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Advances_Insert.resx">
+      <DependentUpon>frm_Advances_Insert.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Disbursement.resx">
+      <DependentUpon>frm_Disbursement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_EmployeeAdd.resx">
+      <DependentUpon>frm_EmployeeAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_EmployeeEdit.resx">
+      <DependentUpon>frm_EmployeeEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_EmployeeSearch.resx">
+      <DependentUpon>frm_EmployeeSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Liquidate.resx">
+      <DependentUpon>frm_Liquidate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_LiquidationReport.resx">
+      <DependentUpon>frm_LiquidationReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Login.resx">
+      <DependentUpon>frm_Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_MainMenu.resx">
+      <DependentUpon>frm_MainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_ReportViewer.resx">
+      <DependentUpon>frm_ReportViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_RptCollectionReport.resx">
+      <DependentUpon>frm_RptCollectionReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_SalesInvoices.resx">
+      <DependentUpon>frm_SalesInvoices.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_SalesInvoicesMarkingAsCancelled.resx">
+      <DependentUpon>frm_SalesInvoicesMarkingAsCancelled.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_SalesInvoicesMarkingAsCollected.resx">
+      <DependentUpon>frm_SalesInvoicesMarkingAsCollected.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_SalesInvoicesMarkingAsReceived.resx">
+      <DependentUpon>frm_SalesInvoicesMarkingAsReceived.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_UpdateClient.resx">
+      <DependentUpon>frm_UpdateClient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_UpdateSalesInvoices.resx">
+      <DependentUpon>frm_UpdateSalesInvoices.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptCollectionReportNew.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptCollectionReportNew.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptCollectionReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptCollectionReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_BankAdvice_BankAccount.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_BankAdvice_BankAccount1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rpt_BankAdvice_Paycard.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_BankAdvice_Paycard1.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Incentive Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Icons\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

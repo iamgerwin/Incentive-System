@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Incentive System", "Incentive System\Incentive System.vbproj", "{FA846C2A-DD97-46F5-8CD4-FA2B0FD0BBF3}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "IncentiveSystem", "IncentiveSystem\IncentiveSystem.vdproj", "{0722E925-E676-4F3A-B349-2A8F92A834ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA846C2A-DD97-46F5-8CD4-FA2B0FD0BBF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA846C2A-DD97-46F5-8CD4-FA2B0FD0BBF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA846C2A-DD97-46F5-8CD4-FA2B0FD0BBF3}.Debug|x86.ActiveCfg = Debug|x86
+		{FA846C2A-DD97-46F5-8CD4-FA2B0FD0BBF3}.Debug|x86.Build.0 = Debug|x86
+		{FA846C2A-DD97-46F5-8CD4-FA2B0FD0BBF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA846C2A-DD97-46F5-8CD4-FA2B0FD0BBF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA846C2A-DD97-46F5-8CD4-FA2B0FD0BBF3}.Release|x86.ActiveCfg = Release|x86
+		{FA846C2A-DD97-46F5-8CD4-FA2B0FD0BBF3}.Release|x86.Build.0 = Release|x86
+		{0722E925-E676-4F3A-B349-2A8F92A834ED}.Debug|Any CPU.ActiveCfg = Debug
+		{0722E925-E676-4F3A-B349-2A8F92A834ED}.Debug|x86.ActiveCfg = Debug
+		{0722E925-E676-4F3A-B349-2A8F92A834ED}.Debug|x86.Build.0 = Debug
+		{0722E925-E676-4F3A-B349-2A8F92A834ED}.Release|Any CPU.ActiveCfg = Release
+		{0722E925-E676-4F3A-B349-2A8F92A834ED}.Release|x86.ActiveCfg = Release
+		{0722E925-E676-4F3A-B349-2A8F92A834ED}.Release|x86.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
